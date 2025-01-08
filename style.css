@@ -1,0 +1,74 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    background-color: #f4f4f4; /* You can change this color */
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333; /* You can change this color */
+    color: white;
+    padding: 5px;
+}
+
+/* Layout Styles */
+#section1 {
+    background-color: #e0e0e0;
+}
+
+#section2 {
+    background-color: #c0c0c0;
+}
+
+#section3 {
+    background-color: #a0a0a0;
+}
+
+/* Media Queries */
+
+/* Desktop View (992px and above) */
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+/* Tablet View (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%;
+        margin: 1%;
+    }
+    #section3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Mobile View (767px and below) */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
